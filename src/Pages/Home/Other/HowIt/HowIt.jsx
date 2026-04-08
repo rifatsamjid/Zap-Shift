@@ -32,12 +32,14 @@ const HowIt = () => {
   return (
     <div className="mt-10">
       <h1 className="font-bold text-3xl ml-8 mb-9">How it Works</h1>
-      <div className="flex gap-2.5 items-center justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2.5 items-center justify-center place-items-center">
         {data.map((item) => (
           <div key={item.id}>
             <div className="bg-white rounded-xl space-y-3 shadow-2xl p-5 h-64 w-72">
               <img src={img} alt="" />
-              <h2 className="font-bold text-2xl text-[#03373D]">{item.title}</h2>
+              <h2 className="font-bold text-2xl text-[#03373D]">
+                {item.title}
+              </h2>
               <p>{item.description}</p>
             </div>
           </div>

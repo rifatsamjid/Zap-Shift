@@ -51,14 +51,18 @@ const OurService = () => {
         </p>
       </div>
       <div>
-        <div className="grid grid-cols-3 p-4 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 gap-5">
           {data.map((item) => (
             <div
               key={item.id}
               className="p-20 bg-white rounded-xl shadow-sm w-[410px] h-[346px] hover:bg-[#CAEB66]"
             >
               <div className="flex justify-center m-4 ">
-                <img className="bg-gradient-to-b from-[#fabdc0] to-[#fdfafa] rounded-full p-2.5" src={Img} alt="" />
+                <img
+                  className="bg-gradient-to-b from-[#fabdc0] to-[#fdfafa] rounded-full p-2.5"
+                  src={Img}
+                  alt=""
+                />
               </div>
               <h1 className="font-bold text-2xl text-center text-[#03373D]">
                 {item.title}

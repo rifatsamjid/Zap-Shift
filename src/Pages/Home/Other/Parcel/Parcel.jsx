@@ -26,6 +26,7 @@ const data = [
 const Parcel = () => {
   return (
     <div>
+      <div className="border-dashed border-t m-9"></div>
       {data.map((parcel) => (
         <div className="flex items-center gap-9 bg-white space-y-4 shadow-sm m-5 p-4 rounded-xl">
           <img src={parcel.images} alt="" />
@@ -38,6 +39,7 @@ const Parcel = () => {
           </div>
         </div>
       ))}
+      <div className=" border-b border-dashed m-9"></div>
     </div>
   );
 };

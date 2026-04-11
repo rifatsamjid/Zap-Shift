@@ -7,6 +7,7 @@ import Parcel from "../Other/Parcel/Parcel";
 import OurPriority from "../Other/OurPriority/OurPriority";
 import CustomerSaying from "../Other/CustomerSaying/CustomerSaying";
 import Reviews from "../Other/Reviews/Reviews";
+import FAQ from "../Other/FAQ/FAQ";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <OurPriority/>
       <CustomerSaying></CustomerSaying>
       <Reviews/>
+      <FAQ/>
     </div>
   );
 };

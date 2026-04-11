@@ -5,6 +5,8 @@ import OurService from "../Other/OurService/OurService";
 import Brands from "../Other/Brands/Brands";
 import Parcel from "../Other/Parcel/Parcel";
 import OurPriority from "../Other/OurPriority/OurPriority";
+import CustomerSaying from "../Other/CustomerSaying/CustomerSaying";
+import Reviews from "../Other/Reviews/Reviews";
 
 const Home = () => {
   return (
@@ -15,6 +17,8 @@ const Home = () => {
       <Brands></Brands>
       <Parcel></Parcel>
       <OurPriority/>
+      <CustomerSaying></CustomerSaying>
+      <Reviews/>
     </div>
   );
 };

@@ -38,8 +38,8 @@ const Brands = () => {
           disableOnInteraction: false,
         }}
       >
-        {brandLogo.map((logo) => (
-          <SwiperSlide>
+        {brandLogo.map((logo,index) => (
+          <SwiperSlide key={index}>
             <img src={logo} alt="" />
           </SwiperSlide>
         ))}

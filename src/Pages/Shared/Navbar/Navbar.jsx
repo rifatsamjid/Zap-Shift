@@ -11,9 +11,7 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            isActive
-              ? "bg-primary px-2 py-0.5 rounded-xl"
-              : ""
+            isActive ? "bg-primary px-2 py-0.5 rounded-xl" : ""
           }
           to="/coverage"
         >
@@ -21,7 +19,14 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to="">About Us</NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "bg-primary px-2 py-0.5 rounded-xl" : ""
+          }
+          to="/about"
+        >
+          About Us
+        </NavLink>
       </li>
       <li>
         <NavLink to="">Pricing</NavLink>

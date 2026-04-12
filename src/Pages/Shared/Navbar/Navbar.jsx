@@ -9,7 +9,16 @@ const Navbar = () => {
         <NavLink to="">Service</NavLink>
       </li>
       <li>
-        <NavLink to="">Coverage</NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "bg-primary px-2 py-0.5 rounded-xl"
+              : ""
+          }
+          to="/coverage"
+        >
+          Coverage
+        </NavLink>
       </li>
       <li>
         <NavLink to="">About Us</NavLink>

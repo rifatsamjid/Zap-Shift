@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import Logo from "../../../components/Logo/Logo";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
+import { AuthContext } from "../../../Context/AuthContext/AuthContext";
 
 const Navbar = () => {
+  const {user,logOut}=useContext(AuthContext)
   const Links = (
     <>
       <li>
@@ -74,7 +76,25 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{Links}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+         <div className="flex gap-4 items-center">
+              {user ? (
+                <>
+                  <span className="text-sm">{user.email}</span>
+                  <button onClick={logOut} className="btn btn-sm btn-error">
+                    Logout
+                  </button>
+                </>
+              ) : (
+                <>
+                  <Link to="/login" className="btn btn-sm btn-outline">
+                    Login
+                  </Link>
+                </>
+              )}
+              <Link to="" className="btn btn-sm btn-primary text-black">
+                Be a rider
+              </Link>
+            </div>
       </div>
     </div>
   );

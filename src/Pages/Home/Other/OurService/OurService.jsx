@@ -41,7 +41,7 @@ const data = [
 
 const OurService = () => {
   return (
-    <div className="bg-secondary mt-24 rounded-xl">
+    <div className="bg-secondary mt-24 rounded-xl p-4">
       <div className="flex flex-col text-white justify-center items-center p-5 space-y-3">
         <h1 className="font-extrabold text-4xl">Our Services</h1>
         <p className="text-center">

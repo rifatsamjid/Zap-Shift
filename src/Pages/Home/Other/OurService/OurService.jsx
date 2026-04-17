@@ -51,11 +51,16 @@ const OurService = () => {
         </p>
       </div>
       <div>
-        <div className="grid justify-center items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-4 md:px-4 lg:px-4 gap-5">
           {data.map((item) => (
             <div
               key={item.id}
-              className=" p-14 lg:p-20 bg-white rounded-xl w-[250px] h-[300px] shadow-sm lg:w-[410px] lg:h-[346px] hover:bg-[#CAEB66]"
+              className="
+        w-full max-w-sm mx-auto
+        p-6 md:p-8 lg:p-10
+        bg-white rounded-xl shadow-sm
+        hover:bg-[#CAEB66] transition
+      "
             >
               <div className="flex justify-center m-4 ">
                 <img

@@ -1,8 +1,8 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router";
 import useAuth from "../../../hooks/useAuth";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Login = () => {
   const { signIn } = useAuth();
@@ -46,7 +46,7 @@ const Login = () => {
             <div>
               <a className="link link-hover">Forgot password?</a>
             </div>
-            <button className="btn btn-neutral w-81 mt-4">Login</button>
+            <button className="btn btn-primary text-black w-81 mt-4">Login</button>
           </fieldset>
         </form>
         <div className="ml-5">
@@ -61,10 +61,7 @@ const Login = () => {
           <p className="text-sm">OR</p>
         </div>
         {/*  Google Login Button */}
-        <button className="btn ml-5 btn-neutral border w-81 border-gray-300 bg-white hover:bg-gray-100 text-black flex items-center justify-center gap-2">
-          <FcGoogle size={20} />
-          Continue with Google
-        </button>
+        <SocialLogin></SocialLogin>
       </div>
     </div>
   );

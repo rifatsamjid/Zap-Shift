@@ -55,7 +55,7 @@ const OurService = () => {
           {data.map((item) => (
             <div
               key={item.id}
-              className=" p-14 lg:p-20 bg-white rounded-xl w-[250] h-[300px] shadow-sm lg:w-[410px] lg:h-[346px] hover:bg-[#CAEB66]"
+              className=" p-14 lg:p-20 bg-white rounded-xl w-[250px] h-[300px] shadow-sm lg:w-[410px] lg:h-[346px] hover:bg-[#CAEB66]"
             >
               <div className="flex justify-center m-4 ">
                 <img

@@ -24,7 +24,7 @@ const Register = () => {
   };
 
   return (
-    <div>
+    <div className="mt-70 h-dvh">
       <form onSubmit={handleSubmit(handleRegister)}>
         <fieldset className="fieldset">
           <label className="label">Email</label>

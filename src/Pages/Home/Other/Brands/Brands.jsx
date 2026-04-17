@@ -28,17 +28,33 @@ const Brands = () => {
       </h1>
       <Swiper
         loop={true}
-        slidesPerView={5}
         centeredSlides={true}
-        spaceBetween={90}
         grabCursor={true}
         modules={[Autoplay]}
         autoplay={{
           delay: 1500,
           disableOnInteraction: false,
         }}
+        breakpoints={{
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 40,
+          },
+        }}
       >
-        {brandLogo.map((logo,index) => (
+        {brandLogo.map((logo, index) => (
           <SwiperSlide key={index}>
             <img src={logo} alt="" />
           </SwiperSlide>

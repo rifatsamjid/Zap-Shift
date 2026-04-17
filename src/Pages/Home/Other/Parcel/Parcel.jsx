@@ -30,10 +30,10 @@ const Parcel = () => {
       {data.map((parcel, index) => (
         <div
           key={index}
-          className="flex items-center gap-9 bg-white space-y-4 shadow-sm m-5 p-4 rounded-xl"
+          className="flex flex-col lg:flex-row items-center gap-9 bg-white space-y-4 shadow-sm m-5 p-4 rounded-xl"
         >
           <img src={parcel.images} alt="" />
-          <div className="h-40 border border-dashed"></div>
+          <div className="w-full h-0 border-t border-dashed  lg:w-0 lg:h-40 lg:border-l lg:border-t-0"></div>
           <div className="space-y-2.5">
             <h1 className="font-extrabold text-2xl text-secondary">
               {parcel.title}

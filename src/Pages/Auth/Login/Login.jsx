@@ -20,9 +20,9 @@ const Login = () => {
   };
 
   return (
-    <div className="m-14">
-      <h2 className="font-extrabold text-5xl">Welcome Back</h2>
-      <p>Login with ZapShift</p>
+    <div className="m-14 flex flex-col justify-center items-center h-dvh">
+      <h2 className="font-extrabold text-5xl text-center">Welcome Back</h2>
+      <p className="text-center mt-2">Login with ZapShift</p>
       {/* form */}
       <div className="card bg-base-100 w-full max-w-sm">
         <form onSubmit={handleSubmit(handleLogIn)} className="card-body">

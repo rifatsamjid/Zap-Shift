@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router";
 import { AuthContext } from "../../../Context/AuthContext/AuthContext";
 
 const Navbar = () => {
-  const {user,logOut}=useContext(AuthContext)
+  const { user, logOut } = useContext(AuthContext);
   const Links = (
     <>
       <li>
@@ -37,7 +37,7 @@ const Navbar = () => {
         <NavLink to="">Blog</NavLink>
       </li>
       <li>
-        <NavLink to="">Contact</NavLink>
+        <NavLink to="/rider">Be a Rider</NavLink>
       </li>
     </>
   );
@@ -76,25 +76,25 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{Links}</ul>
       </div>
       <div className="navbar-end">
-         <div className="flex gap-4 items-center">
-              {user ? (
-                <>
-                  <span className="text-sm">{user.email}</span>
-                  <button onClick={logOut} className="btn btn-sm btn-error">
-                    Logout
-                  </button>
-                </>
-              ) : (
-                <>
-                  <Link to="/login" className="btn btn-sm btn-outline">
-                    Login
-                  </Link>
-                </>
-              )}
-              <Link to="" className="btn btn-sm btn-primary text-black">
-                Be a rider
+        <div className="flex gap-4 items-center">
+          {user ? (
+            <>
+              <span className="text-sm">{user.email}</span>
+              <button onClick={logOut} className="btn btn-sm btn-error">
+                Logout
+              </button>
+            </>
+          ) : (
+            <>
+              <Link to="/login" className="btn btn-sm btn-outline">
+                Login
               </Link>
-            </div>
+            </>
+          )}
+          <Link to="/rider" className="btn btn-sm btn-primary text-black">
+            Be a rider
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -31,13 +31,27 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to="">Pricing</NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "bg-primary px-2 py-0.5 rounded-xl" : ""
+          }
+          to="/send_parcel"
+        >
+          Send Parcel
+        </NavLink>
       </li>
       <li>
         <NavLink to="">Blog</NavLink>
       </li>
       <li>
-        <NavLink to="/rider">Be a Rider</NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "bg-primary px-2 py-0.5 rounded-xl" : ""
+          }
+          to="/rider"
+        >
+          Be a Rider
+        </NavLink>
       </li>
     </>
   );
